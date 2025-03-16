@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #a77a7b9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    
+    color: white;
+    font-size: 45px;
+    height: 50px;
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.todoBox {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(47, 10, 10, 0.319);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 1px 2px 20px rgba(255, 255, 255, 0.611) , -1px -2px 20px rgba(255, 255, 255, 0.611) ;
+}
+
+.todo {
+    height: 70px;
+    width: 490px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.todo input {
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.todo input::placeholder {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.todo button {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(67, 67, 240);
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.todo button:hover {
+    background-color: rgb(27, 27, 238);
+}
+
+.list {
+    margin-top: 20px; /* Space between the input section and the task list */
+}
+
+.list li {
+    display: flex; /* Use flex to align the task text and delete button */
+    justify-content: space-between; /* Space between task text and delete button */
+    align-items: center; /* Vertically center-align the items */
+    margin-bottom: 10px; /* Space between tasks */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px; /* Rounded corners for each task */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.delete-button {
+    margin-left: 10px; /* Space between the task text and delete button */
+    padding: 5px 10px; /* Padding inside the delete button */
+    background-color: #ff4d4d; /* Red background for delete button */
+    color: white; /* White text on the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.delete-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+.delete-button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+
+.delete-button {
+    margin-left: 10px; /* Add space between the task text and delete button */
+    padding: 5px 10px; /* Add padding to the button for better look */
+    background-color: #ff4d4d; /* Red background for delete button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Make cursor a pointer on hover */
+    font-size: 14px; /* Make the text size slightly smaller */
+    transition: background-color 0.3s; /* Smooth transition for background-color */
+}
+
+.delete-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+.delete-button:focus {
+    outline: none; /* Remove the outline when the button is focused */
+}
+
+li {
+    display: flex; /* Use flexbox to align items in the list */
+    justify-content: space-between; /* Space between task text and delete button */
+    align-items: center; /* Vertically align the items */
+    margin-bottom: 10px; /* Space between tasks */
+    padding: 8px;
+    background-color: #f9f9f9; /* Light background for each task */
+    border-radius: 5px; /* Rounded corners for tasks */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+}
